@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T10:15:27.546Z",
+  "updatedAt": "2026-09-17T10:18:37.042Z",
   "date": "2026-09-17",
   "legs": {
     "binary": {
@@ -14,8 +14,8 @@
           "fullName": "NationalSecurityAgency/ghidra",
           "url": "https://github.com/NationalSecurityAgency/ghidra",
           "description": "Ghidra is a software reverse engineering (SRE) framework",
-          "stars": 78141,
-          "forks": 8650,
+          "stars": 78142,
+          "forks": 8651,
           "openIssues": 1962,
           "language": "Java",
           "owner": {
@@ -30,7 +30,7 @@
           ],
           "createdAt": "2019-03-01T03:27:48Z",
           "pushedAt": "2026-09-15T16:02:22Z",
-          "updatedAt": "2026-09-17T10:05:58Z",
+          "updatedAt": "2026-09-17T10:13:04Z",
           "license": "Apache-2.0",
           "archived": false,
           "_verified": true
@@ -278,7 +278,7 @@
           "fullName": "frida/frida",
           "url": "https://github.com/frida/frida",
           "description": "Main repo for hosting release binaries",
-          "stars": 21947,
+          "stars": 21948,
           "forks": 2216,
           "openIssues": 1964,
           "language": "Meson",
@@ -294,7 +294,7 @@
           ],
           "createdAt": "2013-04-12T22:35:05Z",
           "pushedAt": "2026-09-16T17:29:13Z",
-          "updatedAt": "2026-09-17T08:01:21Z",
+          "updatedAt": "2026-09-17T10:12:17Z",
           "license": "NOASSERTION",
           "archived": false,
           "_verified": true
@@ -2102,7 +2102,7 @@
           "fullName": "LSPosed/LSPosed",
           "url": "https://github.com/LSPosed/LSPosed",
           "description": "LSPosed Framework",
-          "stars": 24717,
+          "stars": 24718,
           "forks": 3580,
           "openIssues": 5,
           "language": "Java",
@@ -2117,7 +2117,7 @@
           ],
           "createdAt": "2020-12-12T08:39:37Z",
           "pushedAt": "2026-09-14T21:07:08Z",
-          "updatedAt": "2026-09-17T09:11:47Z",
+          "updatedAt": "2026-09-17T10:16:54Z",
           "license": "GPL-3.0",
           "archived": false,
           "_verified": true
@@ -2284,7 +2284,7 @@
           "fullName": "JingMatrix/Vector",
           "url": "https://github.com/JingMatrix/Vector",
           "description": "Modern Xposed Framework",
-          "stars": 12435,
+          "stars": 12436,
           "forks": 832,
           "openIssues": 24,
           "language": "Kotlin",
@@ -2302,7 +2302,7 @@
           ],
           "createdAt": "2023-07-20T18:03:30Z",
           "pushedAt": "2026-09-14T01:57:17Z",
-          "updatedAt": "2026-09-17T09:51:16Z",
+          "updatedAt": "2026-09-17T10:17:16Z",
           "license": "GPL-3.0",
           "archived": false,
           "_verified": true
@@ -3835,7 +3835,7 @@
         "fullName": "lennney/stop-that-shit",
         "url": "https://github.com/lennney/stop-that-shit",
         "description": "Stop That Shit（别再造史了）｜面向 Codex/GPT 场景的多平台 Hook + Skill Guard：拦截 AI coding agent 无需求的哈希、校验和与任务范围膨胀。 A multi-platform Hook + Skill Guard for AI coding agents in Codex/GPT workflows: stop unrequested hashes, checksums, and task-scope creep.",
-        "stars": 2053,
+        "stars": 2052,
         "forks": 49,
         "openIssues": 4,
         "language": "JavaScript",
@@ -3863,7 +3863,7 @@
         ],
         "createdAt": "2026-08-11T15:31:45Z",
         "pushedAt": "2026-09-16T09:38:50Z",
-        "updatedAt": "2026-09-17T09:58:03Z",
+        "updatedAt": "2026-09-17T10:16:51Z",
         "license": "MIT",
         "archived": false
       },
@@ -6002,7 +6002,7 @@
   },
   "alertThreshold": 1000,
   "insight": {
-    "generatedAt": "2026-09-17T10:15:40.851Z",
+    "generatedAt": "2026-09-17T10:18:37.057Z",
     "date": "2026-09-17",
     "baseline": null,
     "note": "首跑：已写入今日基线快照，7 日内开始产出增量榜单。",
