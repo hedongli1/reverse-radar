@@ -2,7 +2,7 @@
 
 每日追踪**逆向工程**领域的开源新晋与飙升项目。常驻 GitHub Actions，无需人工干预。
 
-**在线看板 → https://hedongli1.github.io/reverse-radar/**
+在线看板 → https://hedongli1.github.io/reverse-radar/
 
 ---
 
