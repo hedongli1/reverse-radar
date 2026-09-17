@@ -1,0 +1,107 @@
+name: reverse-radar
+
+# 逆向工程动向雷达 · 每日抓取
+#
+# 为什么是 UTC 02:07：
+#   - 与用户已有的三班定时任务错峰：trending-radar 晨报 00:30 / 晚报 14:14，
+#     aiscan 巡检 17:00。避免同一时刻抢 GitHub Search API 配额与 Actions 队列。
+#   - 错开整点：GitHub 官方文档明确说明整点是全球 cron 排队高峰，
+#     "scheduled jobs may be dropped"，建议避开。
+#   - 【关键】必须每天同一时刻拍快照。差值才有意义，时刻漂移会让
+#     「7 天涨了多少」这个核心指标失真。
+
+on:
+  schedule:
+    - cron: '7 2 * * *'
+  workflow_dispatch:
+
+# GITHUB_TOKEN push 不会触发其他 workflow（GitHub 官方限制：除
+# workflow_dispatch / repository_dispatch 外，GITHUB_TOKEN 触发的事件
+# 不创建 workflow run）。所以 Pages 部署必须挂在同一个 workflow 里，
+# 不能指望「push 完让另一个 workflow 自动部署」。
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: reverse-radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    name: 抓取 → 提交 → 部署
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 使用内置 GITHUB_TOKEN 而非个人 PAT：
+      # 内置 token 每次运行自动生成、永不过期，与个人凭据彻底解耦。
+      # 这样个人 PAT 到期或轮换都不会影响自动化。
+      - name: 抓取榜单数据
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch.js
+
+      - name: 工作流摘要
+        if: always()
+        run: |
+          {
+            echo "## 📡 逆向工程动向雷达"
+            echo ""
+            echo "**抓取时间**：$(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo ""
+            if [ -f docs/data/latest.json ]; then
+              node -e "
+                const d = require('./docs/data/latest.json');
+                const ins = d.insight || {};
+                console.log('| 指标 | 数量 |');
+                console.log('| :--- | ---: |');
+                console.log('| 追踪仓库 | ' + d.stats.uniqueRepos + ' |');
+                console.log('| 本周期新面孔 | ' + (d.discovery.total) + ' |');
+                console.log('| 7 日涨星 | ' + ((ins.rising7d||[]).length) + ' |');
+                console.log('| 资源清单 | ' + d.stats.resourceLists + ' |');
+                console.log('');
+                if (ins.baseline) console.log('基线日期：' + ins.baseline.date + '（' + ins.baseline.age + ' 天前）');
+                else console.log('基线积累中（首跑）');
+                console.log('');
+                console.log('在线看板：https://hedongli1.github.io/reverse-radar/');
+              "
+            fi
+          } >> $GITHUB_STEP_SUMMARY
+
+      - name: 提交数据
+        run: |
+          git config user.name "reverse-radar-bot"
+          git config user.email "hedongli1@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet || (git commit -m "chore(data): radar update $(date -u '+%Y-%m-%d') [skip ci]" && git push)
+
+      - name: 投递 issue 周报
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/report-issue.js
+
+      - name: 提交 issue 状态
+        run: |
+          git add docs/data/issue-state.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "chore(state): issue cursor [skip ci]" && git push)
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs/'
+
+      - name: 部署到 Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

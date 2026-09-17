@@ -1,0 +1,124 @@
+{
+  "$comment": [
+    "词表外置：改词不改代码。所有 query 均已在 2026-09-17 对 GitHub Search API 实测通过。",
+    "【硬约束 1】GitHub 不允许同类型限定符做 OR。`topic:a OR topic:b` 和 `is:public OR is:private`",
+    "             都会返回 422 'The search contains only logical operators (AND / OR / NOT) without any search terms'。",
+    "             裸词 OR 是合法的（`frida OR ghidra in:name,description`），但限定符 OR 不是。",
+    "【硬约束 2】`(a OR b) in:name,description` 会让 in: 静默失效——括号打断限定符作用域。",
+    "             实测 (hooking OR mitmproxy) in:name,description 返回 151987 条垃圾，",
+    "             而 hooking OR mitmproxy in:name,description 返回 1392 条干净结果。",
+    "             所以：裸词 OR 时绝不能加括号。",
+    "【硬约束 3】不要用裸词 OR 去限定名词——解析器会把它当成独立项。",
+    "             `wechat OR weixin in:name,description hook OR reverse OR protocol` 实测 12244 条，",
+    "             因为 frp / MCP servers 这类无关仓库同时命中 'protocol' 和 'reverse'。",
+    "             改用空格（AND）+ 具名目标：`wechat hook in:name,description` → 42 条，全对。"
+  ],
+
+  "pushedWithinDays": 45,
+  "minStars": 20,
+  "pageSize": 100,
+  "maxPagesPerQuery": 6,
+
+  "legs": [
+    {
+      "key": "binary",
+      "name": "二进制 / 安全逆向",
+      "icon": "🔬",
+      "desc": "反编译、反汇编、动态插桩、恶意样本与固件分析",
+      "queries": [
+        "reverse-engineering OR decompiler OR disassembler in:name,description stars:>=30",
+        "binary-analysis OR malware-analysis OR firmware-analysis in:name,description stars:>=30",
+        "ghidra OR radare2 OR rizin OR x64dbg OR imhex OR angr in:name,description stars:>=30",
+        "frida OR objection OR \"dynamic instrumentation\" in:name,description stars:>=30",
+        "\"ida plugin\" OR \"ida pro\" OR \"binary ninja\" in:name,description stars:>=20"
+      ],
+      "topics": ["topic:reverse-engineering stars:>=20"],
+      "minStarsFloor": 20
+    },
+    {
+      "key": "protocol",
+      "name": "前端 / 协议逆向",
+      "icon": "📡",
+      "desc": "App 协议解析、抓包中间人、注入与 Hooking、爬虫反混淆",
+      "queries": [
+        "wechat hook in:name,description stars:>=50",
+        "wechat reverse in:name,description stars:>=20",
+        "douyin reverse in:name,description stars:>=20",
+        "douyin hook in:name,description stars:>=20",
+        "douyin sign in:name,description stars:>=20",
+        "douyin protocol in:name,description stars:>=20",
+        "tiktok reverse in:name,description stars:>=20",
+        "tiktok hook in:name,description stars:>=20",
+        "android reverse in:name,description stars:>=50",
+        "ios reverse in:name,description stars:>=50",
+        "\"app reverse\" in:name,description stars:>=50",
+        "xposed OR lsposed in:name,description stars:>=100",
+        "magisk in:name stars:>=50",
+        "mitmproxy OR charles OR \"packet capture\" OR \"traffic analysis\" in:name,description stars:>=100",
+        "jadx OR apktool OR \"apk reverse\" in:name,description stars:>=100"
+      ],
+      "topics": [
+        "topic:hooking stars:>=20",
+        "topic:protocol-analysis stars:>=5",
+        "topic:packet-capture stars:>=50",
+        "topic:xposed stars:>=50"
+      ],
+      "minStarsFloor": 20
+    }
+  ],
+
+  "discovery": {
+    "name": "本周期新面孔",
+    "icon": "🌱",
+    "desc": "近 45 天内新建、已开始起量的项目——这才是雷达真正要盯的东西",
+    "queries": [
+      "reverse-engineering OR decompiler OR hooking OR frida OR ghidra in:name,description created:>__CREATED__ stars:>=5",
+      "hooking OR mitmproxy OR \"packet capture\" OR \"protocol analysis\" in:name,description created:>__CREATED__ stars:>=5"
+    ],
+    "minStarsFloor": 5
+  },
+
+  "noise": {
+    "$comment": "命中 name/description 即打入「资源清单」分区，不进主榜。它们 star 天然高，会系统性挤掉真工具。",
+    "awesomePatterns": [
+      "^awesome[-_]", "[-_]awesome$", "awesome-", "-awesome",
+      "curated list", "collection of", "a list of", "list of ",
+      "tutorial", "roadmap", "cheatsheet", "cheat sheet",
+      "book of", "books", "learning path", "getting started guide"
+    ],
+    "keywords": [
+      "the-art-of-hacking", "awesome-hacking", "hack-with-github",
+      "interview", "system-design-primer", "free-programming",
+      "学习", "教程", "入门", "从零", "从0",
+      "study plan", "study guide", "系列教程",
+      "clone-wars", "download_api", "downloader", "下载器"
+    ]
+  },
+
+  "blacklist": {
+    "$comment": "前端生态会用 hooks/hooking 做包名，会全量污染「协议逆向」腿。实测 (hooking OR mitmproxy) stars:>100 的 top1 是 react-use(44076)，top3 是 alibaba/hooks(14972)。",
+    "ownerOrNamePatterns": [
+      "^react-hook", "^react-use", "-react-hooks", "react-hook-form",
+      "^alibaba/hooks", "vueuse", "^vue-", "composables"
+    ]
+  },
+
+  "relevance": {
+    "$comment": [
+      "语义校验：只作用于「仅靠 topic 命中」的查询（该查询须在 topicOnlyQueries 中列出）。",
+      "起因：topic 由作者自行填写，乱打严重。实测 topic:reverse-engineering 捞到",
+      "  Tyrrrz/YoutubeDownloader（YouTube 下载器）",
+      "  librepods-org/librepods（AirPods 工具）",
+      "  JCodesMore/ai-website-cloner-template（34k 星的网站克隆模板）",
+      "全都挂了 reverse-engineering 标签，但都不是逆向工程工具。",
+      "in:name,description 类查询天然已要求关键词出现在名称/简介，不重复校验。"
+    ],
+    "appliesToQueries": ["topic:reverse-engineering stars:>=20"],
+    "pattern": "reverse|decompil|disassembl|debugger|debug|binary|firmware|malware|unpack|deobfusc|patch|hook|inject|exploit|emulat|instrument|trace|analy[sz]|hex|protocol|packet|traffic|intercept|crack|bypass|dump|ghidra|radare|rizin|ida|x64dbg|frida|angr|apktool|jadx|jeb|winapi|syscall|kernel module|shellcode|obfuscat|signature|sign|token|api|revers|逆向|反编译|抓包|脱壳|破解"
+  },
+
+  "alert": {
+    "$comment": "异常信号阈值：7 天增星超过该值 → 单独开一条 issue 告警。",
+    "surge7dStars": 1000
+  }
+}

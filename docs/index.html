@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>逆向工程动向雷达 · Reverse Radar</title>
+<meta name="description" content="每日追踪逆向工程领域的开源新晋与飙升项目：二进制逆向 / 协议逆向">
+<style>
+  :root{
+    --bg:#0b0d12; --panel:#131722; --panel2:#1a1f2e; --line:#252b3d;
+    --fg:#e6e9f0; --fg2:#9aa3b8; --fg3:#6b7488;
+    --accent:#5eead4; --accent2:#7dd3fc;
+    --up:#4ade80; --hot:#fb923c; --new:#a78bfa;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);color:var(--fg);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* ── Header ── */
+  header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#0d1017,#0b0d12);position:sticky;top:0;z-index:20}
+  .hd{display:flex;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap}
+  h1{font-size:20px;font-weight:700;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+  h1 .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .tag{font-size:12px;color:var(--fg3);border:1px solid var(--line);padding:3px 9px;border-radius:99px}
+  .meta{margin-left:auto;font-size:12.5px;color:var(--fg3);text-align:right;line-height:1.5}
+
+  /* ── Stat row ── */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+  .stat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.03em}
+  .stat span{font-size:12px;color:var(--fg3)}
+
+  /* ── Tabs ── */
+  nav.tabs{display:flex;gap:6px;margin:26px 0 18px;flex-wrap:wrap}
+  nav.tabs button{
+    background:var(--panel);border:1px solid var(--line);color:var(--fg2);
+    padding:9px 15px;border-radius:9px;font-size:13.5px;cursor:pointer;
+    font-family:inherit;transition:.15s;white-space:nowrap;
+  }
+  nav.tabs button:hover{border-color:#39415a;color:var(--fg)}
+  nav.tabs button.on{background:var(--accent);border-color:var(--accent);color:#07231e;font-weight:600}
+  nav.tabs button .n{opacity:.6;font-size:11.5px;margin-left:5px}
+
+  /* ── Panel ── */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:26px}
+  .ph{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .ph h2{font-size:15.5px;font-weight:650}
+  .ph p{font-size:12.5px;color:var(--fg3)}
+
+  /* ── Repo card ── */
+  .repo{display:flex;gap:14px;padding:15px 18px;border-bottom:1px solid var(--line);transition:background .12s}
+  .repo:last-child{border-bottom:0}
+  .repo:hover{background:var(--panel2)}
+  .rank{width:26px;flex:none;color:var(--fg3);font-size:13px;font-variant-numeric:tabular-nums;padding-top:2px;text-align:right}
+  .av{width:38px;height:38px;border-radius:9px;flex:none;background:var(--panel2);border:1px solid var(--line)}
+  .body{min-width:0;flex:1}
+  .ttl{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+  .ttl a{font-weight:600;font-size:14.5px;color:var(--accent2);word-break:break-word}
+  .ttl a:hover{text-decoration:underline}
+  .desc{color:var(--fg2);font-size:13.2px;margin-top:3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tagrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px;align-items:center}
+  .chip{font-size:11px;color:var(--fg3);border:1px solid var(--line);padding:2px 8px;border-radius:99px;white-space:nowrap}
+  .chip.b{color:var(--accent2);border-color:#2c4a5e}
+  .chip.d{color:var(--up);border-color:#265040;font-variant-numeric:tabular-nums}
+  .chip.h{color:var(--hot);border-color:#5c3a1e;font-variant-numeric:tabular-nums}
+  .chip.n{color:var(--new);border-color:#41356b}
+  .right{flex:none;text-align:right;min-width:74px}
+  .stars{font-size:15px;font-weight:650;font-variant-numeric:tabular-nums}
+  .stars small{display:block;font-size:10.5px;color:var(--fg3);font-weight:400;letter-spacing:.04em}
+
+  .empty{padding:44px 18px;text-align:center;color:var(--fg3);font-size:13.5px}
+  .empty b{display:block;color:var(--fg2);font-size:14.5px;margin-bottom:6px;font-weight:600}
+
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 44px;color:var(--fg3);font-size:12.5px}
+  footer a{color:var(--fg2)}
+  footer a:hover{color:var(--accent2)}
+  @media(max-width:620px){
+    .hd{gap:10px}.meta{margin-left:0;text-align:left;width:100%}
+    .repo{padding:13px 14px;gap:11px}.av{display:none}
+    .right{min-width:62px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <h1><span class="dot"></span>逆向工程动向雷达</h1>
+    <span class="tag">Reverse Radar</span>
+    <div class="meta">
+      更新于 <b id="upd">—</b><br>
+      <span id="cad">每日 UTC 02:07 自动抓取</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stats" id="stats"></div>
+  <nav class="tabs" id="tabs"></nav>
+  <div class="panel">
+    <div class="ph"><h2 id="ph-t">—</h2><p id="ph-d"></p></div>
+    <div id="list"></div>
+  </div>
+
+  <footer>
+    <div>数据来源：GitHub Search API · 快照每日 02:07 UTC 拍摄 · 保留 90 天</div>
+    <div style="margin-top:6px">
+      源码 <a href="https://github.com/hedongli1/reverse-radar">hedongli1/reverse-radar</a> ·
+      姊妹项目 <a href="https://hedongli1.github.io/trending-radar/">全站趋势雷达</a> ·
+      <a href="https://hedongli1.github.io/">博客</a>
+    </div>
+    <div style="margin-top:10px;color:var(--fg3);font-size:12px">
+      榜单已隔离 awesome-list / 教程类仓库（star 天然偏高，会挤掉真工具），单列「资源清单」分区。
+    </div>
+  </footer>
+</main>
+
+<script>
+const fmt = n => n >= 1000 ? (n/1000).toFixed(1).replace(/\.0$/,'') + 'k' : String(n);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+let DATA = null, active = null;
+
+function repoCard(r, i, kind){
+  const created = r.createdAt ? new Date(r.createdAt) : null;
+  const daysOld = created ? Math.round((Date.now() - created) / 864e5) : null;
+  const chips = [];
+  if (r.language && r.language !== 'Other') chips.push(`<span class="chip">${esc(r.language)}</span>`);
+  if (r.delta) chips.push(`<span class="chip ${r.delta >= 1000 ? 'h' : 'd'}">▲ ${fmt(r.delta)} / ${r.days || 7}天</span>`);
+  if (r.perDay && r.delta) chips.push(`<span class="chip d">+${r.perDay}/天</span>`);
+  if (daysOld !== null && daysOld <= 90) chips.push(`<span class="chip n">新建 ${daysOld} 天</span>`);
+  if (r.archived) chips.push(`<span class="chip">已归档</span>`);
+
+  return `<div class="repo">
+    <div class="rank">${i}</div>
+    <img class="av" loading="lazy" src="${esc(r.owner?.avatarUrl || '')}" alt="" onerror="this.style.visibility='hidden'">
+    <div class="body">
+      <div class="ttl"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.fullName)}</a></div>
+      <div class="desc">${esc(r.description)}</div>
+      <div class="tagrow">${chips.join('')}</div>
+    </div>
+    <div class="right"><div class="stars">${fmt(r.stars)}<small>STARS</small></div></div>
+  </div>`;
+}
+
+function render(key){
+  active = key;
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.k === key));
+  const list = document.getElementById('list');
+  const d = DATA;
+
+  let title = '', desc = '', repos = [];
+
+  if (key === 'rising') {
+    const ins = d.insight || {};
+    title = '📈 7 日涨星榜';
+    repos = ins.rising7d || [];
+    desc = ins.baseline
+      ? `对比 ${ins.baseline.date} 基线（${ins.baseline.age} 天前）· 这是雷达的核心产出`
+      : '积累中：需要至少 7 天快照才能算出增速';
+    if (!repos.length) {
+      list.innerHTML = `<div class="empty"><b>${ins.baseline ? '本周期没有仓库录得增长' : '快照基线积累中'}</b>
+        ${ins.baseline ? '所有追踪仓库的 star 数均与基线持平或下降。' : (ins.note || '雷达刚上线，已写入今日基线。7 日内开始产出增量榜单。')}</div>`;
+      document.getElementById('ph-t').textContent = title;
+      document.getElementById('ph-d').textContent = desc;
+      return;
+    }
+  } else if (key === 'discovery') {
+    title = `${d.discovery.icon} ${d.discovery.name}`;
+    desc = d.discovery.desc;
+    repos = d.discovery.repos;
+  } else if (key === 'resources') {
+    title = '📚 资源清单';
+    desc = 'awesome-list / 教程 / 学习路线类仓库 —— 已从主榜隔离，但它们是人工整理的领域索引，值得翻阅';
+    repos = d.resources;
+  } else {
+    const leg = d.legs[key];
+    title = `${leg.icon} ${leg.name}`;
+    desc = leg.desc + ` · 共 ${leg.total} 个仓库`;
+    repos = leg.repos;
+  }
+
+  document.getElementById('ph-t').textContent = title;
+  document.getElementById('ph-d').textContent = desc;
+  list.innerHTML = repos.length
+    ? repos.map((r, i) => repoCard(r, i + 1, key)).join('')
+    : '<div class="empty"><b>暂无数据</b>本次抓取没有命中的仓库。</div>';
+}
+
+(async function(){
+  try {
+    const res = await fetch('data/latest.json?t=' + Date.now());
+    DATA = await res.json();
+  } catch (e) {
+    document.getElementById('list').innerHTML =
+      '<div class="empty"><b>数据加载失败</b>无法读取 data/latest.json。</div>';
+    return;
+  }
+
+  const d = DATA;
+  document.getElementById('upd').textContent = d.date + ' ' + new Date(d.updatedAt).toISOString().slice(11,16) + ' UTC';
+
+  const ins = d.insight || {};
+  const risingCount = (ins.rising7d || []).length;
+  document.getElementById('stats').innerHTML = [
+    ['追踪仓库', d.stats.uniqueRepos, '全量快照覆盖'],
+    ['本周期新面孔', d.discovery.total, '近 45 天新建'],
+    ['7 日涨星', risingCount, ins.baseline ? '对比 ' + ins.baseline.date : '基线积累中'],
+    ['资源清单', d.stats.resourceLists, '已隔离出主榜'],
+  ].map(([k, v, s]) =>
+    `<div class="stat"><b>${v}</b><span>${k} · ${s}</span></div>`).join('');
+
+  const tabs = [
+    ['rising', '📈 7 日涨星', risingCount],
+    ['discovery', d.discovery.icon + ' ' + d.discovery.name, d.discovery.total],
+    ...Object.values(d.legs).map(l => [l.key, l.icon + ' ' + l.name, l.total]),
+    ['resources', '📚 资源清单', d.resources.length],
+  ];
+  document.getElementById('tabs').innerHTML = tabs.map(([k, label, n]) =>
+    `<button data-k="${k}">${label}<span class="n">${n}</span></button>`).join('');
+  document.getElementById('tabs').onclick = e => {
+    const b = e.target.closest('button');
+    if (b) render(b.dataset.k);
+  };
+
+  render('rising');
+})();
+</script>
+</body>
+</html>
