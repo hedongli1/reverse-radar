@@ -72,8 +72,9 @@
     "icon": "🌱",
     "desc": "近 45 天内新建、已开始起量的项目——这才是雷达真正要盯的东西",
     "queries": [
-      "reverse-engineering OR decompiler OR hooking OR frida OR ghidra in:name,description created:>__CREATED__ stars:>=5",
-      "hooking OR mitmproxy OR \"packet capture\" OR \"protocol analysis\" in:name,description created:>__CREATED__ stars:>=5"
+      "reverse-engineering OR decompiler OR disassembler OR frida OR ghidra in:name,description created:>__CREATED__ stars:>=5",
+      "mitmproxy OR \"packet capture\" OR \"protocol analysis\" OR \"traffic analysis\" in:name,description created:>__CREATED__ stars:>=10",
+      "binary-analysis OR malware-analysis OR firmware-analysis OR decompile in:name,description created:>__CREATED__ stars:>=5"
     ],
     "minStarsFloor": 5
   },
@@ -96,10 +97,23 @@
   },
 
   "blacklist": {
-    "$comment": "前端生态会用 hooks/hooking 做包名，会全量污染「协议逆向」腿。实测 (hooking OR mitmproxy) stars:>100 的 top1 是 react-use(44076)，top3 是 alibaba/hooks(14972)。",
+    "$comment": [
+      "生态用词劫持：两个不同圈子都把 hooks 当核心术语，会全量污染「协议逆向」腿。",
+      "  前端： (hooking OR mitmproxy) stars:>100 的 top1 是 react-use(44076)，top3 是 alibaba/hooks(14972)。",
+      "  AI Agent：Claude Code / Codex 生态把生命周期回调叫 hooks，2026-09 实测每日有",
+      "            marketing-os / linkedin-agent-skill / codex-task-pointer 等十余条混入。",
+      "",
+      "【边界】只拦「领域无关」的标识，不拦「领域 + agent 接口」。",
+      "  ❌ 曾误拦 MCP 相关模式（mcp-server / mcp-）：MCP 只是接口而非领域，",
+      "     实测把 ida-mcp-server / apktool-mcp-server / jadx-ai-mcp 这些正经逆向工具全杀了。",
+      "     2026 年逆向工具挂 MCP 接口是主流做法，必须放行。",
+      "  ✅ 保留的拦截仅针对明显属于 AI-agent 生态自身的命名。"
+    ],
     "ownerOrNamePatterns": [
       "^react-hook", "^react-use", "-react-hooks", "react-hook-form",
-      "^alibaba/hooks", "vueuse", "^vue-", "composables"
+      "^alibaba/hooks", "vueuse", "^vue-", "composables",
+      "agent-skill", "agent-skills", "^claude-", "claude-code", "codex-", "-codex",
+      "opencode", "copilot-", "cursor-"
     ]
   },
 

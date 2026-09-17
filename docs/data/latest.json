@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T10:18:37.042Z",
+  "updatedAt": "2026-09-17T10:28:40.892Z",
   "date": "2026-09-17",
   "legs": {
     "binary": {
@@ -14,7 +14,7 @@
           "fullName": "NationalSecurityAgency/ghidra",
           "url": "https://github.com/NationalSecurityAgency/ghidra",
           "description": "Ghidra is a software reverse engineering (SRE) framework",
-          "stars": 78142,
+          "stars": 78143,
           "forks": 8651,
           "openIssues": 1962,
           "language": "Java",
@@ -30,7 +30,7 @@
           ],
           "createdAt": "2019-03-01T03:27:48Z",
           "pushedAt": "2026-09-15T16:02:22Z",
-          "updatedAt": "2026-09-17T10:13:04Z",
+          "updatedAt": "2026-09-17T10:23:34Z",
           "license": "Apache-2.0",
           "archived": false,
           "_verified": true
@@ -113,7 +113,7 @@
           "fullName": "x64dbg/x64dbg",
           "url": "https://github.com/x64dbg/x64dbg",
           "description": "An open-source user mode debugger for Windows. Optimized for reverse engineering and malware analysis.",
-          "stars": 49532,
+          "stars": 49533,
           "forks": 2842,
           "openIssues": 579,
           "language": "C++",
@@ -146,7 +146,7 @@
           ],
           "createdAt": "2015-04-11T20:48:23Z",
           "pushedAt": "2026-09-14T22:47:30Z",
-          "updatedAt": "2026-09-17T09:46:33Z",
+          "updatedAt": "2026-09-17T10:19:17Z",
           "license": "NOASSERTION",
           "archived": false,
           "_verified": true
@@ -157,7 +157,7 @@
           "fullName": "zhaoxuya520/reverse-skill",
           "url": "https://github.com/zhaoxuya520/reverse-skill",
           "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-          "stars": 36241,
+          "stars": 36242,
           "forks": 5004,
           "openIssues": 11,
           "language": "PowerShell",
@@ -169,7 +169,7 @@
           "topics": [],
           "createdAt": "2026-05-13T14:37:57Z",
           "pushedAt": "2026-09-03T12:25:52Z",
-          "updatedAt": "2026-09-17T09:45:45Z",
+          "updatedAt": "2026-09-17T10:17:15Z",
           "license": "MIT",
           "archived": false,
           "_verified": true
@@ -278,7 +278,7 @@
           "fullName": "frida/frida",
           "url": "https://github.com/frida/frida",
           "description": "Main repo for hosting release binaries",
-          "stars": 21948,
+          "stars": 21949,
           "forks": 2216,
           "openIssues": 1964,
           "language": "Meson",
@@ -294,7 +294,7 @@
           ],
           "createdAt": "2013-04-12T22:35:05Z",
           "pushedAt": "2026-09-16T17:29:13Z",
-          "updatedAt": "2026-09-17T10:12:17Z",
+          "updatedAt": "2026-09-17T10:19:50Z",
           "license": "NOASSERTION",
           "archived": false,
           "_verified": true
@@ -1928,7 +1928,7 @@
           "_verified": true
         }
       ],
-      "total": 2527
+      "total": 2515
     },
     "protocol": {
       "key": "protocol",
@@ -2028,7 +2028,7 @@
           "fullName": "GyulyVGC/sniffnet",
           "url": "https://github.com/GyulyVGC/sniffnet",
           "description": "Comfortably monitor your network traffic 🕵️‍♂️",
-          "stars": 41142,
+          "stars": 41143,
           "forks": 1959,
           "openIssues": 60,
           "language": "Rust",
@@ -2061,7 +2061,7 @@
           ],
           "createdAt": "2022-07-31T21:55:56Z",
           "pushedAt": "2026-09-17T10:12:27Z",
-          "updatedAt": "2026-09-17T09:52:09Z",
+          "updatedAt": "2026-09-17T10:22:16Z",
           "license": "Apache-2.0",
           "archived": false,
           "_verified": true
@@ -2128,7 +2128,7 @@
           "fullName": "android-hacker/VirtualXposed",
           "url": "https://github.com/android-hacker/VirtualXposed",
           "description": "A simple app to use Xposed without root, unlock the bootloader or modify system image, etc.",
-          "stars": 16059,
+          "stars": 16060,
           "forks": 2531,
           "openIssues": 162,
           "language": "Java",
@@ -2146,7 +2146,7 @@
           ],
           "createdAt": "2017-12-01T09:00:58Z",
           "pushedAt": "2024-03-08T05:09:27Z",
-          "updatedAt": "2026-09-16T08:36:05Z",
+          "updatedAt": "2026-09-17T10:27:07Z",
           "license": "GPL-3.0",
           "archived": false,
           "_verified": true
@@ -2638,7 +2638,7 @@
           "description": "QNotified phoenix - To make OICQ great again",
           "stars": 5750,
           "forks": 417,
-          "openIssues": 267,
+          "openIssues": 268,
           "language": "Java",
           "owner": {
             "login": "cinit",
@@ -3820,7 +3820,7 @@
           "_verified": true
         }
       ],
-      "total": 1182
+      "total": 1180
     }
   },
   "discovery": {
@@ -3829,44 +3829,6 @@
     "icon": "🌱",
     "desc": "近 45 天内新建、已开始起量的项目——这才是雷达真正要盯的东西",
     "repos": [
-      {
-        "id": 1331079127,
-        "name": "stop-that-shit",
-        "fullName": "lennney/stop-that-shit",
-        "url": "https://github.com/lennney/stop-that-shit",
-        "description": "Stop That Shit（别再造史了）｜面向 Codex/GPT 场景的多平台 Hook + Skill Guard：拦截 AI coding agent 无需求的哈希、校验和与任务范围膨胀。 A multi-platform Hook + Skill Guard for AI coding agents in Codex/GPT workflows: stop unrequested hashes, checksums, and task-scope creep.",
-        "stars": 2052,
-        "forks": 49,
-        "openIssues": 4,
-        "language": "JavaScript",
-        "owner": {
-          "login": "lennney",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/94768569?v=4",
-          "url": "https://github.com/lennney"
-        },
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "ai-coding",
-          "claude-code",
-          "codex",
-          "codex-cli",
-          "codex-plugin",
-          "developer-tools",
-          "guardrails",
-          "hermes-agent",
-          "local-first",
-          "opencode",
-          "overengineering",
-          "scope-control",
-          "yagni"
-        ],
-        "createdAt": "2026-08-11T15:31:45Z",
-        "pushedAt": "2026-09-16T09:38:50Z",
-        "updatedAt": "2026-09-17T10:16:51Z",
-        "license": "MIT",
-        "archived": false
-      },
       {
         "id": 1351859098,
         "name": "reverify",
@@ -3911,41 +3873,6 @@
         "archived": false
       },
       {
-        "id": 1337303060,
-        "name": "marketing-os",
-        "fullName": "Yuzzyuk/marketing-os",
-        "url": "https://github.com/Yuzzyuk/marketing-os",
-        "description": "An entire marketing department as one Claude skill. 14 modules: audits scored 0-100, an 18-tactic hook engine, copy graded before you see it, ad diagnosis, GEO, email, launches, pricing. Works in Claude, Codex and Cursor.",
-        "stars": 509,
-        "forks": 105,
-        "openIssues": 2,
-        "language": "Other",
-        "owner": {
-          "login": "Yuzzyuk",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/223005005?v=4",
-          "url": "https://github.com/Yuzzyuk"
-        },
-        "topics": [
-          "agent-skills",
-          "ai-marketing",
-          "claude-code",
-          "claude-skills",
-          "codex",
-          "copywriting",
-          "cro",
-          "cursor",
-          "geo",
-          "marketing",
-          "marketing-skills",
-          "seo"
-        ],
-        "createdAt": "2026-08-17T15:05:59Z",
-        "pushedAt": "2026-08-17T15:06:26Z",
-        "updatedAt": "2026-09-16T22:38:52Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
         "id": 1353853430,
         "name": "image-prompt-reverse",
         "fullName": "LunarXuan/image-prompt-reverse",
@@ -3973,36 +3900,6 @@
         "archived": false
       },
       {
-        "id": 1360725349,
-        "name": "linkedin-agent-skill",
-        "fullName": "Jakeschincariol/linkedin-agent-skill",
-        "url": "https://github.com/Jakeschincariol/linkedin-agent-skill",
-        "description": "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.",
-        "stars": 272,
-        "forks": 41,
-        "openIssues": 4,
-        "language": "Python",
-        "owner": {
-          "login": "Jakeschincariol",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/196724947?v=4",
-          "url": "https://github.com/Jakeschincariol"
-        },
-        "topics": [
-          "agent-skills",
-          "ai-humanizer",
-          "claude",
-          "claude-code",
-          "claude-skills",
-          "content-marketing",
-          "linkedin"
-        ],
-        "createdAt": "2026-09-07T22:58:16Z",
-        "pushedAt": "2026-09-13T14:14:22Z",
-        "updatedAt": "2026-09-17T08:44:18Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
         "id": 1324636939,
         "name": "r0crawl_skills",
         "fullName": "manyuegong33/r0crawl_skills",
@@ -4025,77 +3922,31 @@
         "archived": false
       },
       {
-        "id": 1336155185,
-        "name": "graph-memory-starter",
-        "fullName": "Glitch-Cat-Club/graph-memory-starter",
-        "url": "https://github.com/Glitch-Cat-Club/graph-memory-starter",
-        "description": "Knowledge graph memory for AI assistants: three SQLite tables, one recursive query, one prompt hook.",
-        "stars": 226,
-        "forks": 19,
-        "openIssues": 0,
-        "language": "Python",
+        "id": 1364100151,
+        "name": "strikers",
+        "fullName": "new-coke/strikers",
+        "url": "https://github.com/new-coke/strikers",
+        "description": "A native PC port of Super Mario Strikers, ported from decompiled code. Not a recompilation.",
+        "stars": 206,
+        "forks": 10,
+        "openIssues": 10,
+        "language": "C++",
         "owner": {
-          "login": "Glitch-Cat-Club",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/286092231?v=4",
-          "url": "https://github.com/Glitch-Cat-Club"
-        },
-        "topics": [],
-        "createdAt": "2026-08-16T16:51:26Z",
-        "pushedAt": "2026-08-30T13:34:15Z",
-        "updatedAt": "2026-09-13T03:52:27Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1341026277,
-        "name": "marketing-agi",
-        "fullName": "holy-templar/marketing-agi",
-        "url": "https://github.com/holy-templar/marketing-agi",
-        "description": "Marketing AGI: an entire marketing department as one Claude skill. 14 modules: audits scored 0-100, an 18-tactic hook engine, copy graded before you see it, ad diagnosis, GEO, email, launches, pricing.",
-        "stars": 207,
-        "forks": 46,
-        "openIssues": 0,
-        "language": "Other",
-        "owner": {
-          "login": "holy-templar",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/279264069?v=4",
-          "url": "https://github.com/holy-templar"
-        },
-        "topics": [],
-        "createdAt": "2026-08-20T18:24:29Z",
-        "pushedAt": "2026-08-20T18:24:34Z",
-        "updatedAt": "2026-09-16T05:34:18Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1351538048,
-        "name": "codex-task-pointer",
-        "fullName": "big0lives/codex-task-pointer",
-        "url": "https://github.com/big0lives/codex-task-pointer",
-        "description": "Pre-compaction hooks + a CAS-guarded task pointer that keep Codex agents on-goal across context auto-compaction — no mainline drift, no duplicate work, no conflicting progress in long runs.",
-        "stars": 161,
-        "forks": 16,
-        "openIssues": 0,
-        "language": "PowerShell",
-        "owner": {
-          "login": "big0lives",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/126476684?v=4",
-          "url": "https://github.com/big0lives"
+          "login": "new-coke",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/325998550?v=4",
+          "url": "https://github.com/new-coke"
         },
         "topics": [
-          "agent-hooks",
-          "agents",
-          "codex",
-          "codex-cli",
-          "codex-desktop",
-          "context-compaction",
-          "session-continuity"
+          "aurora",
+          "gamecube",
+          "next-level-games",
+          "nintendo-gamecube",
+          "super-mario-strikers"
         ],
-        "createdAt": "2026-08-30T16:04:16Z",
-        "pushedAt": "2026-08-30T16:09:15Z",
-        "updatedAt": "2026-09-17T04:29:31Z",
-        "license": "MIT",
+        "createdAt": "2026-09-10T12:26:34Z",
+        "pushedAt": "2026-09-17T09:44:59Z",
+        "updatedAt": "2026-09-17T09:43:59Z",
+        "license": null,
         "archived": false
       },
       {
@@ -4106,7 +3957,7 @@
         "description": "Complete reverse-skill (87 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack.",
         "stars": 146,
         "forks": 14,
-        "openIssues": 0,
+        "openIssues": 1,
         "language": "PowerShell",
         "owner": {
           "login": "dhicoc",
@@ -4128,47 +3979,34 @@
         "archived": false
       },
       {
-        "id": 1332667033,
-        "name": "codexkit",
-        "fullName": "manhvann/codexkit",
-        "url": "https://github.com/manhvann/codexkit",
-        "description": "Project-local Codex workspace kit with reusable skills, agents, hooks, plans, docs, and helper scripts for multi-repository development.",
-        "stars": 88,
-        "forks": 85,
-        "openIssues": 0,
-        "language": "Python",
-        "owner": {
-          "login": "manhvann",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/108862213?v=4",
-          "url": "https://github.com/manhvann"
-        },
-        "topics": [],
-        "createdAt": "2026-08-13T03:39:02Z",
-        "pushedAt": "2026-08-29T04:03:10Z",
-        "updatedAt": "2026-08-29T03:53:52Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1353594378,
-        "name": "svm-dbg",
-        "fullName": "Qmeimei10086/svm-dbg",
-        "url": "https://github.com/Qmeimei10086/svm-dbg",
-        "description": "基于npt-hook的amd平台调试体系重建工具",
-        "stars": 75,
-        "forks": 31,
-        "openIssues": 0,
+        "id": 1351803914,
+        "name": "goldeneye-pc-port",
+        "fullName": "jkdansereau/goldeneye-pc-port",
+        "url": "https://github.com/jkdansereau/goldeneye-pc-port",
+        "description": " A native PC port of GoldenEye 007 (N64) and a testbed for multi-agent AI porting a large decompiled C codebase.",
+        "stars": 82,
+        "forks": 5,
+        "openIssues": 5,
         "language": "C",
         "owner": {
-          "login": "Qmeimei10086",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/63040512?v=4",
-          "url": "https://github.com/Qmeimei10086"
+          "login": "jkdansereau",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/106631954?v=4",
+          "url": "https://github.com/jkdansereau"
         },
-        "topics": [],
-        "createdAt": "2026-09-01T13:18:34Z",
-        "pushedAt": "2026-09-04T17:17:41Z",
-        "updatedAt": "2026-09-17T03:02:24Z",
-        "license": null,
+        "topics": [
+          "agentic-development",
+          "c",
+          "game-porting",
+          "goldeneye-007",
+          "mips",
+          "n64-decomp",
+          "pc-port",
+          "reverse-engineering"
+        ],
+        "createdAt": "2026-08-30T23:02:49Z",
+        "pushedAt": "2026-09-16T13:21:49Z",
+        "updatedAt": "2026-09-17T08:19:28Z",
+        "license": "MIT",
         "archived": false
       },
       {
@@ -4199,37 +4037,6 @@
         "pushedAt": "2026-08-28T09:13:13Z",
         "updatedAt": "2026-09-15T16:36:59Z",
         "license": "GPL-2.0",
-        "archived": false
-      },
-      {
-        "id": 1362261456,
-        "name": "clawd-conduit",
-        "fullName": "ssssssanjiu/clawd-conduit",
-        "url": "https://github.com/ssssssanjiu/clawd-conduit",
-        "description": "Full-lifecycle wiring between Claude Code and the Clawd on Desk pet — all 15 hook events, with permission prompts answered straight from the desktop",
-        "stars": 68,
-        "forks": 2,
-        "openIssues": 0,
-        "language": "Shell",
-        "owner": {
-          "login": "ssssssanjiu",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/243310559?v=4",
-          "url": "https://github.com/ssssssanjiu"
-        },
-        "topics": [
-          "ai-agents",
-          "claude",
-          "claude-code",
-          "desktop-pet",
-          "developer-tools",
-          "dotfiles",
-          "hooks",
-          "macos"
-        ],
-        "createdAt": "2026-09-09T05:54:41Z",
-        "pushedAt": "2026-09-09T07:59:06Z",
-        "updatedAt": "2026-09-17T07:42:01Z",
-        "license": "MIT",
         "archived": false
       },
       {
@@ -4280,28 +4087,6 @@
         "createdAt": "2026-08-12T19:38:20Z",
         "pushedAt": "2026-08-13T03:58:58Z",
         "updatedAt": "2026-09-17T02:44:40Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1368447577,
-        "name": "instagram-agent-skill",
-        "fullName": "Jakeschincariol/instagram-agent-skill",
-        "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
-        "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT.",
-        "stars": 57,
-        "forks": 6,
-        "openIssues": 0,
-        "language": "Python",
-        "owner": {
-          "login": "Jakeschincariol",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/196724947?v=4",
-          "url": "https://github.com/Jakeschincariol"
-        },
-        "topics": [],
-        "createdAt": "2026-09-13T14:09:50Z",
-        "pushedAt": "2026-09-13T14:10:31Z",
-        "updatedAt": "2026-09-17T09:33:45Z",
         "license": "MIT",
         "archived": false
       },
@@ -4460,56 +4245,6 @@
         "archived": false
       },
       {
-        "id": 1352477412,
-        "name": "claude-code-guardrails",
-        "fullName": "tillmeier/claude-code-guardrails",
-        "url": "https://github.com/tillmeier/claude-code-guardrails",
-        "description": "Incident-derived guardrail hooks and a plan→implement→verify→crosscheck delivery loop for Claude Code. Hook cost measured; 35 bats tests.",
-        "stars": 51,
-        "forks": 0,
-        "openIssues": 0,
-        "language": "Shell",
-        "owner": {
-          "login": "tillmeier",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/46969909?v=4",
-          "url": "https://github.com/tillmeier"
-        },
-        "topics": [
-          "claude-code",
-          "claude-code-plugin",
-          "developer-tools",
-          "git-safety",
-          "hooks"
-        ],
-        "createdAt": "2026-08-31T13:57:51Z",
-        "pushedAt": "2026-09-16T12:20:46Z",
-        "updatedAt": "2026-09-16T12:20:49Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1369040724,
-        "name": "oil-codex-title",
-        "fullName": "oil-oil/oil-codex-title",
-        "url": "https://github.com/oil-oil/oil-codex-title",
-        "description": "Codex 话题实时命名，更好区分。独立 Luna Fast、emoji 分类与 Stop Hook 自动更新。",
-        "stars": 49,
-        "forks": 3,
-        "openIssues": 0,
-        "language": "Python",
-        "owner": {
-          "login": "oil-oil",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/57465570?v=4",
-          "url": "https://github.com/oil-oil"
-        },
-        "topics": [],
-        "createdAt": "2026-09-14T00:00:02Z",
-        "pushedAt": "2026-09-14T06:09:13Z",
-        "updatedAt": "2026-09-17T07:31:46Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
         "id": 1343976525,
         "name": "apple-gpu-dvfs",
         "fullName": "maderix/apple-gpu-dvfs",
@@ -4532,56 +4267,24 @@
         "archived": false
       },
       {
-        "id": 1323746502,
-        "name": "HAPPY-JS",
-        "fullName": "MY0723/HAPPY-JS",
-        "url": "https://github.com/MY0723/HAPPY-JS",
-        "description": "HAPPY JS 是一款面向 Web 安全测试与 JS 逆向工程的综合型浏览器扩展，融合了 **FindSomething（敏感信息扫描）**、**SnowEyes（指纹/资源发现）**、**AntiDebug_Breaker（反调试与 API Hook）** 三类项目的核心能力，并重新设计了插件 UI 与扫描引擎。采用 Manifest V3，同时适配 Chrome / Edge / Brave（Chromium 内核）与 Firefox 128+。",
-        "stars": 46,
-        "forks": 5,
-        "openIssues": 2,
-        "language": "JavaScript",
+        "id": 1340455874,
+        "name": "fortitool",
+        "fullName": "mosajjal/fortitool",
+        "url": "https://github.com/mosajjal/fortitool",
+        "description": "Fortinet Firmware decryption and analysis tools",
+        "stars": 45,
+        "forks": 8,
+        "openIssues": 3,
+        "language": "Go",
         "owner": {
-          "login": "MY0723",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/74171727?v=4",
-          "url": "https://github.com/MY0723"
+          "login": "mosajjal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/10158936?v=4",
+          "url": "https://github.com/mosajjal"
         },
         "topics": [],
-        "createdAt": "2026-08-05T07:11:10Z",
-        "pushedAt": "2026-09-16T03:37:33Z",
-        "updatedAt": "2026-09-17T03:51:59Z",
-        "license": null,
-        "archived": false
-      },
-      {
-        "id": 1326164488,
-        "name": "orca-agent-cleanup",
-        "fullName": "wilgon456/orca-agent-cleanup",
-        "url": "https://github.com/wilgon456/orca-agent-cleanup",
-        "description": "Safely audit and quarantine Orca-installed agent skills, hooks, and CLI residue on Windows, macOS, and Linux.",
-        "stars": 45,
-        "forks": 1,
-        "openIssues": 1,
-        "language": "JavaScript",
-        "owner": {
-          "login": "wilgon456",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/54878785?v=4",
-          "url": "https://github.com/wilgon456"
-        },
-        "topics": [
-          "claude-code",
-          "cleanup",
-          "codex",
-          "linux",
-          "macos",
-          "nodejs",
-          "orca",
-          "powershell",
-          "windows"
-        ],
-        "createdAt": "2026-08-07T03:34:40Z",
-        "pushedAt": "2026-09-03T10:41:25Z",
-        "updatedAt": "2026-09-11T15:29:43Z",
+        "createdAt": "2026-08-20T08:19:47Z",
+        "pushedAt": "2026-09-03T10:36:43Z",
+        "updatedAt": "2026-09-12T16:15:47Z",
         "license": "MIT",
         "archived": false
       },
@@ -4605,49 +4308,6 @@
         "pushedAt": "2026-09-05T15:05:02Z",
         "updatedAt": "2026-09-15T10:38:08Z",
         "license": null,
-        "archived": false
-      },
-      {
-        "id": 1338400536,
-        "name": "Exodus-Fake-Balance",
-        "fullName": "halo38/Exodus-Fake-Balance",
-        "url": "https://github.com/halo38/Exodus-Fake-Balance",
-        "description": "Exodus Fake Balance — Native balance overlay tool for Exodus wallet with real-time spoofing across BTC, ETH, SOL, XRP and 200+ assets, persistent hooks, and screenshot-safe display rendering",
-        "stars": 44,
-        "forks": 7,
-        "openIssues": 0,
-        "language": "Python",
-        "owner": {
-          "login": "halo38",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/304671536?v=4",
-          "url": "https://github.com/halo38"
-        },
-        "topics": [
-          "ethereum",
-          "exodus-balance-flasher",
-          "exodus-eth-flasher",
-          "exodus-fake-balance-flasher",
-          "exodus-fake-wallet",
-          "exodus-sol-flasher",
-          "exodus-trx-flasher",
-          "exodus-wallet-flash",
-          "fake-balance-flasher-exodus",
-          "fake-exodus-crypto",
-          "fakewallet",
-          "flash",
-          "flash-solana-tool",
-          "gram-wallet-fake",
-          "ledger-api",
-          "phantom-clone",
-          "rctip",
-          "ton-balance",
-          "trust-wallet",
-          "trx"
-        ],
-        "createdAt": "2026-08-18T12:50:55Z",
-        "pushedAt": "2026-08-27T11:31:54Z",
-        "updatedAt": "2026-09-14T18:59:48Z",
-        "license": "MIT",
         "archived": false
       },
       {
@@ -4678,98 +4338,25 @@
         "archived": false
       },
       {
-        "id": 1366190855,
-        "name": "youtube-scout",
-        "fullName": "AgriciDaniel/youtube-scout",
-        "url": "https://github.com/AgriciDaniel/youtube-scout",
-        "description": "Claude Code skill: one topic in, one ranked YouTube research workbook out. Searches YouTube Data API v3, ranks by views, engagement, momentum or breakout, and writes Videos, Channels, Summary, Comments and Transcripts sheets with hooks and replay hotspots. Appends into an existing social ads sheet.",
-        "stars": 42,
-        "forks": 7,
-        "openIssues": 0,
-        "language": "Python",
-        "owner": {
-          "login": "AgriciDaniel",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/223140489?v=4",
-          "url": "https://github.com/AgriciDaniel"
-        },
-        "topics": [
-          "agent-skill",
-          "ai-marketing",
-          "claude-code",
-          "claude-skill",
-          "cli",
-          "competitor-research",
-          "creator-research",
-          "hooks",
-          "marketing-research",
-          "openpyxl",
-          "python",
-          "shorts",
-          "social-ads",
-          "spreadsheet",
-          "transcripts",
-          "xlsx",
-          "youtube",
-          "youtube-data-api",
-          "youtube-research",
-          "yt-dlp"
-        ],
-        "createdAt": "2026-09-11T13:38:59Z",
-        "pushedAt": "2026-09-11T21:01:19Z",
-        "updatedAt": "2026-09-17T05:15:51Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1324938411,
-        "name": "Refine-Cycle-for-Hermes-Agent",
-        "fullName": "Bergschloss/Refine-Cycle-for-Hermes-Agent",
-        "url": "https://github.com/Bergschloss/Refine-Cycle-for-Hermes-Agent",
-        "description": "Self-improvement loop for Hermes Agent: reads its own trajectory, proposes and applies the smallest skill/memory edit (create/patch), journaled with rollback. /refine command, refine_run tool, on_session_end hook.",
+        "id": 1329430882,
+        "name": "re-harness",
+        "fullName": "thatskriptkid/re-harness",
+        "url": "https://github.com/thatskriptkid/re-harness",
+        "description": "Harness fo malware analysis",
         "stars": 39,
-        "forks": 1,
-        "openIssues": 0,
+        "forks": 2,
+        "openIssues": 2,
         "language": "Python",
         "owner": {
-          "login": "Bergschloss",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/263254659?v=4",
-          "url": "https://github.com/Bergschloss"
-        },
-        "topics": [
-          "ai-agent",
-          "continuous-learning",
-          "hermes-agent",
-          "hermes-plugin",
-          "nous-research",
-          "python",
-          "self-improving-agent"
-        ],
-        "createdAt": "2026-08-06T08:15:04Z",
-        "pushedAt": "2026-09-16T20:45:18Z",
-        "updatedAt": "2026-09-16T22:08:00Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1357385968,
-        "name": "pte-dbg",
-        "fullName": "Qmeimei10086/pte-dbg",
-        "url": "https://github.com/Qmeimei10086/pte-dbg",
-        "description": "基于pte-hook的调试器保护工具",
-        "stars": 38,
-        "forks": 16,
-        "openIssues": 0,
-        "language": "C++",
-        "owner": {
-          "login": "Qmeimei10086",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/63040512?v=4",
-          "url": "https://github.com/Qmeimei10086"
+          "login": "thatskriptkid",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/8300184?v=4",
+          "url": "https://github.com/thatskriptkid"
         },
         "topics": [],
-        "createdAt": "2026-09-04T16:50:16Z",
-        "pushedAt": "2026-09-04T19:10:17Z",
-        "updatedAt": "2026-09-17T03:04:05Z",
-        "license": null,
+        "createdAt": "2026-08-10T04:48:37Z",
+        "pushedAt": "2026-08-23T12:44:26Z",
+        "updatedAt": "2026-09-16T18:59:20Z",
+        "license": "AGPL-3.0",
         "archived": false
       },
       {
@@ -4792,6 +4379,28 @@
         "pushedAt": "2026-08-16T16:45:23Z",
         "updatedAt": "2026-09-17T02:06:18Z",
         "license": null,
+        "archived": false
+      },
+      {
+        "id": 1333025201,
+        "name": "APISignature",
+        "fullName": "mohammad-alattas/APISignature",
+        "url": "https://github.com/mohammad-alattas/APISignature",
+        "description": "APISignature is a plugin for x64dbg that help the malware analysts & reverse engineers during analysis by adding a reference for more than 44,000+ API functions for Microsoft API documents & additional section about how to abuse the API function. ",
+        "stars": 37,
+        "forks": 2,
+        "openIssues": 0,
+        "language": "Python",
+        "owner": {
+          "login": "mohammad-alattas",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/72650499?v=4",
+          "url": "https://github.com/mohammad-alattas"
+        },
+        "topics": [],
+        "createdAt": "2026-08-13T11:10:41Z",
+        "pushedAt": "2026-08-15T04:51:48Z",
+        "updatedAt": "2026-09-13T05:03:00Z",
+        "license": "NOASSERTION",
         "archived": false
       },
       {
@@ -4824,54 +4433,24 @@
         "archived": false
       },
       {
-        "id": 1326143244,
-        "name": "harness-starter-kit",
-        "fullName": "agentcrew-academy/harness-starter-kit",
-        "url": "https://github.com/agentcrew-academy/harness-starter-kit",
-        "description": "三個讓 AI 助手守規矩的 Claude Code hook，加上五套現成的工作流程。不會寫程式也能裝：把網址貼給 AI 說「幫我裝」即可。",
-        "stars": 36,
-        "forks": 4,
+        "id": 1340012459,
+        "name": "android-tv-supply-chain-malware",
+        "fullName": "AyaanB-DotCom/android-tv-supply-chain-malware",
+        "url": "https://github.com/AyaanB-DotCom/android-tv-supply-chain-malware",
+        "description": "Hardware-level firmware extraction and malware analysis of a $25 Android TV box",
+        "stars": 35,
+        "forks": 5,
         "openIssues": 0,
-        "language": "Python",
+        "language": "Other",
         "owner": {
-          "login": "agentcrew-academy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/306057515?v=4",
-          "url": "https://github.com/agentcrew-academy"
+          "login": "AyaanB-DotCom",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/234667740?v=4",
+          "url": "https://github.com/AyaanB-DotCom"
         },
         "topics": [],
-        "createdAt": "2026-08-07T03:07:57Z",
-        "pushedAt": "2026-09-04T05:16:40Z",
-        "updatedAt": "2026-09-04T05:16:44Z",
-        "license": "MIT",
-        "archived": false
-      },
-      {
-        "id": 1345401816,
-        "name": "claude-code-tune-kit",
-        "fullName": "Carlos-Dominguez-faber/claude-code-tune-kit",
-        "url": "https://github.com/Carlos-Dominguez-faber/claude-code-tune-kit",
-        "description": "Deja de usar Claude Code como venía en la caja. Semáforo de contexto, modo conciso, 4 hooks que bloquean comandos destructivos y secretos, estilo de salida sin humo, GLM sin secuestrar tu config — y cc-doctor.sh, que audita tu instalación y te dice qué te falta.",
-        "stars": 35,
-        "forks": 1,
-        "openIssues": 0,
-        "language": "Shell",
-        "owner": {
-          "login": "Carlos-Dominguez-faber",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/256424385?v=4",
-          "url": "https://github.com/Carlos-Dominguez-faber"
-        },
-        "topics": [
-          "ai-coding",
-          "claude",
-          "claude-code",
-          "developer-tools",
-          "dotfiles",
-          "espanol",
-          "hooks"
-        ],
-        "createdAt": "2026-08-24T20:59:18Z",
-        "pushedAt": "2026-08-27T20:33:28Z",
-        "updatedAt": "2026-09-10T01:22:22Z",
+        "createdAt": "2026-08-19T20:46:58Z",
+        "pushedAt": "2026-08-23T02:29:01Z",
+        "updatedAt": "2026-09-16T00:41:14Z",
         "license": "MIT",
         "archived": false
       },
@@ -4898,61 +4477,445 @@
         "archived": false
       },
       {
-        "id": 1348230731,
-        "name": "wxhook",
-        "fullName": "hero0913/wxhook",
-        "url": "https://github.com/hero0913/wxhook",
-        "description": "pc微信hook 3.9.12.56 ，wechat hook",
+        "id": 1333238624,
+        "name": "mobile-trust-lab",
+        "fullName": "TAKU-ZE/mobile-trust-lab",
+        "url": "https://github.com/TAKU-ZE/mobile-trust-lab",
+        "description": "An Android security research lab for analyzing client trust boundaries, insecure local state, exported components, and runtime integrity controls. Includes a purpose-built vulnerable app, static APK checks, Frida instrumentation, reproducible findings, and validated remediations.",
         "stars": 33,
-        "forks": 21,
-        "openIssues": 1,
+        "forks": 0,
+        "openIssues": 5,
+        "language": "Python",
+        "owner": {
+          "login": "TAKU-ZE",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/190860695?v=4",
+          "url": "https://github.com/TAKU-ZE"
+        },
+        "topics": [],
+        "createdAt": "2026-08-13T15:00:51Z",
+        "pushedAt": "2026-09-01T11:48:53Z",
+        "updatedAt": "2026-09-16T07:55:48Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1356218279,
+        "name": "kunglao-agent",
+        "fullName": "amd2g2zz/kunglao-agent",
+        "url": "https://github.com/amd2g2zz/kunglao-agent",
+        "description": "The reverse-engineering expert agent: plans its own analysis path, derives every fact from raw evidence, and converges under mechanical verification gates — firmware, protocols, web/JS, risk-control, binaries.",
+        "stars": 30,
+        "forks": 9,
+        "openIssues": 61,
+        "language": "Python",
+        "owner": {
+          "login": "amd2g2zz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/300373553?v=4",
+          "url": "https://github.com/amd2g2zz"
+        },
+        "topics": [],
+        "createdAt": "2026-09-03T16:57:31Z",
+        "pushedAt": "2026-09-13T16:53:48Z",
+        "updatedAt": "2026-09-17T08:04:08Z",
+        "license": "AGPL-3.0",
+        "archived": false
+      },
+      {
+        "id": 1347324079,
+        "name": "VMPLift",
+        "fullName": "sexyiam/VMPLift",
+        "url": "https://github.com/sexyiam/VMPLift",
+        "description": "map and lift the VM handlers so you can read them in IDA/Ghidra made for vmp 3.8-3.10",
+        "stars": 28,
+        "forks": 9,
+        "openIssues": 0,
         "language": "C++",
         "owner": {
-          "login": "hero0913",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/22727812?v=4",
-          "url": "https://github.com/hero0913"
+          "login": "sexyiam",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/158042876?v=4",
+          "url": "https://github.com/sexyiam"
         },
         "topics": [
-          "hook",
-          "wechat",
-          "weixin",
-          "wxhook"
+          "devirtualization",
+          "devirtualizer",
+          "lifter",
+          "unpack",
+          "unpacker",
+          "vmp",
+          "vmprotect",
+          "vmprotect-ultimate"
         ],
-        "createdAt": "2026-08-27T08:10:20Z",
-        "pushedAt": "2026-09-07T03:24:10Z",
-        "updatedAt": "2026-09-16T20:17:05Z",
+        "createdAt": "2026-08-26T12:44:48Z",
+        "pushedAt": "2026-08-28T15:40:09Z",
+        "updatedAt": "2026-09-16T13:22:10Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1334869048,
+        "name": "recurse",
+        "fullName": "aayush0325/recurse",
+        "url": "https://github.com/aayush0325/recurse",
+        "description": "Cursor for Reverse Engineering",
+        "stars": 26,
+        "forks": 3,
+        "openIssues": 0,
+        "language": "Rust",
+        "owner": {
+          "login": "aayush0325",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/96649223?v=4",
+          "url": "https://github.com/aayush0325"
+        },
+        "topics": [
+          "agentic-ai",
+          "decompiler",
+          "ide",
+          "radare2",
+          "reverse-engineering",
+          "rust",
+          "tauri"
+        ],
+        "createdAt": "2026-08-15T07:01:39Z",
+        "pushedAt": "2026-08-24T13:30:51Z",
+        "updatedAt": "2026-08-27T03:21:40Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1357829995,
+        "name": "samp-source",
+        "fullName": "Dryxio/samp-source",
+        "url": "https://github.com/Dryxio/samp-source",
+        "description": "Rebuilding SA-MP 0.3.7 R5 from source, byte for byte. AI-assisted reverse engineering with verifiable binary matches.",
+        "stars": 25,
+        "forks": 1,
+        "openIssues": 0,
+        "language": "C++",
+        "owner": {
+          "login": "Dryxio",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/215281400?v=4",
+          "url": "https://github.com/Dryxio"
+        },
+        "topics": [
+          "cpp",
+          "decompilation",
+          "game-preservation",
+          "reverse-engineering",
+          "samp"
+        ],
+        "createdAt": "2026-09-05T04:39:35Z",
+        "pushedAt": "2026-09-10T00:34:06Z",
+        "updatedAt": "2026-09-16T12:17:48Z",
         "license": null,
         "archived": false
       },
       {
-        "id": 1363559794,
-        "name": "sonic-match-mcp",
-        "fullName": "js713-lab/sonic-match-mcp",
-        "url": "https://github.com/js713-lab/sonic-match-mcp",
-        "description": "MCP server that watches video footage and returns license-safe BGM matches, hook windows, and ffmpeg ducking specs for agents.",
-        "stars": 33,
+        "id": 1373285521,
+        "name": "friday",
+        "fullName": "friday-memory/friday",
+        "url": "https://github.com/friday-memory/friday",
+        "description": "⚡ The open-source persistent cognitive memory layer for AI coding agents. Stop your Cursor, Claude & Copilot from having amnesia.",
+        "stars": 24,
+        "forks": 4,
+        "openIssues": 0,
+        "language": "HTML",
+        "owner": {
+          "login": "friday-memory",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/330241020?v=4",
+          "url": "https://github.com/friday-memory"
+        },
+        "topics": [
+          "ai-agents",
+          "ai-memory",
+          "antigravity",
+          "antigravity-cli",
+          "antigravity-ide",
+          "claude-code",
+          "claudecode",
+          "codex",
+          "cognitive-ai",
+          "cursor",
+          "developer-tools",
+          "fastapi",
+          "knowledge-graph",
+          "llm",
+          "mcp",
+          "model-context-protocol",
+          "neo4j",
+          "persistent-memory"
+        ],
+        "createdAt": "2026-09-16T15:53:02Z",
+        "pushedAt": "2026-09-17T03:27:34Z",
+        "updatedAt": "2026-09-17T09:58:56Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1353738456,
+        "name": "cpguard",
+        "fullName": "KimJeju/cpguard",
+        "url": "https://github.com/KimJeju/cpguard",
+        "description": "Open-source  CPG-based interprocedural taint analysis + LLM triage, with a Ghidra-style audit workbench. Runs fully offline.",
+        "stars": 22,
+        "forks": 5,
+        "openIssues": 0,
+        "language": "Python",
+        "owner": {
+          "login": "KimJeju",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/80661467?v=4",
+          "url": "https://github.com/KimJeju"
+        },
+        "topics": [
+          "appsec",
+          "code-property-graph",
+          "devsecops",
+          "llm",
+          "sarif",
+          "sast",
+          "security",
+          "static-analysis",
+          "taint-analysis",
+          "vulnerability-scanner"
+        ],
+        "createdAt": "2026-09-01T15:37:44Z",
+        "pushedAt": "2026-09-11T15:00:19Z",
+        "updatedAt": "2026-09-15T17:40:24Z",
+        "license": "Apache-2.0",
+        "archived": false
+      },
+      {
+        "id": 1329704518,
+        "name": "ctxdebug",
+        "fullName": "DdUdle/ctxdebug",
+        "url": "https://github.com/DdUdle/ctxdebug",
+        "description": "MCP-powered reverse engineering platform connecting WinDbg, IDA Pro & x64dbg with 160+ AI-accessible debugging and analysis tools.",
+        "stars": 22,
+        "forks": 2,
+        "openIssues": 1,
+        "language": "Python",
+        "owner": {
+          "login": "DdUdle",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/47857752?v=4",
+          "url": "https://github.com/DdUdle"
+        },
+        "topics": [],
+        "createdAt": "2026-08-10T10:35:27Z",
+        "pushedAt": "2026-09-13T21:10:38Z",
+        "updatedAt": "2026-09-13T21:11:22Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1353997801,
+        "name": "JNIC370",
+        "fullName": "YumeGod/JNIC370",
+        "url": "https://github.com/YumeGod/JNIC370",
+        "description": "This repository documents a reverse-engineering analysis of JNIC 3.7.0",
+        "stars": 21,
+        "forks": 2,
+        "openIssues": 0,
+        "language": "Other",
+        "owner": {
+          "login": "YumeGod",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/87877783?v=4",
+          "url": "https://github.com/YumeGod"
+        },
+        "topics": [],
+        "createdAt": "2026-09-01T20:25:29Z",
+        "pushedAt": "2026-09-01T21:34:47Z",
+        "updatedAt": "2026-09-09T15:24:42Z",
+        "license": null,
+        "archived": false
+      },
+      {
+        "id": 1336388296,
+        "name": "elgato-cam-link-4k-firmware-re",
+        "fullName": "schlarpc/elgato-cam-link-4k-firmware-re",
+        "url": "https://github.com/schlarpc/elgato-cam-link-4k-firmware-re",
+        "description": "Firmware reverse engineering of the Elgato Cam Link 4K (USB 0fd9:0066): vendor HID protocol, SPI flash layout, FX3 and ECP5 firmware formats, update path, security analysis, and an independent flashing tool.",
+        "stars": 21,
         "forks": 0,
         "openIssues": 0,
         "language": "Python",
         "owner": {
-          "login": "js713-lab",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100214153?v=4",
-          "url": "https://github.com/js713-lab"
+          "login": "schlarpc",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/1164278?v=4",
+          "url": "https://github.com/schlarpc"
         },
         "topics": [
-          "ai-agents",
-          "bgm",
-          "ffmpeg",
-          "mcp",
-          "model-context-protocol",
-          "music-matching",
-          "python",
-          "video"
+          "cam-link",
+          "capture-card",
+          "cypress-fx3",
+          "ecp5",
+          "elgato",
+          "firmware",
+          "fpga",
+          "hid",
+          "reverse-engineering",
+          "usb"
         ],
-        "createdAt": "2026-09-10T05:26:25Z",
-        "pushedAt": "2026-09-16T08:47:53Z",
-        "updatedAt": "2026-09-17T08:54:26Z",
+        "createdAt": "2026-08-16T21:43:06Z",
+        "pushedAt": "2026-08-16T21:43:28Z",
+        "updatedAt": "2026-09-06T21:18:10Z",
         "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1359219085,
+        "name": "jsd",
+        "fullName": "jar-analyzer/jsd",
+        "url": "https://github.com/jar-analyzer/jsd",
+        "description": "A pure TypeScript/JavaScript decompiler for Java bytecode. Runs in browsers and Node.js — no JVM, WebAssembly, or runtime dependencies.",
+        "stars": 20,
+        "forks": 0,
+        "openIssues": 0,
+        "language": "TypeScript",
+        "owner": {
+          "login": "jar-analyzer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/147261835?v=4",
+          "url": "https://github.com/jar-analyzer"
+        },
+        "topics": [
+          "bytecode",
+          "classfile",
+          "java-bytecode",
+          "java-decompiler",
+          "jvm"
+        ],
+        "createdAt": "2026-09-06T14:25:40Z",
+        "pushedAt": "2026-09-12T15:17:23Z",
+        "updatedAt": "2026-09-15T06:24:07Z",
+        "license": "NOASSERTION",
+        "archived": false
+      },
+      {
+        "id": 1325585728,
+        "name": "Frida-Patcher",
+        "fullName": "TK757567/Frida-Patcher",
+        "url": "https://github.com/TK757567/Frida-Patcher",
+        "description": "frida-server binary patcher that defeats string/port/thread anti-Frida detection",
+        "stars": 19,
+        "forks": 4,
+        "openIssues": 0,
+        "language": "Python",
+        "owner": {
+          "login": "TK757567",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/58666766?v=4",
+          "url": "https://github.com/TK757567"
+        },
+        "topics": [],
+        "createdAt": "2026-08-06T17:19:59Z",
+        "pushedAt": "2026-08-11T14:01:47Z",
+        "updatedAt": "2026-08-29T21:18:19Z",
+        "license": null,
+        "archived": false
+      },
+      {
+        "id": 1325348097,
+        "name": "dualsense-ps5-usb-research",
+        "fullName": "ShadowByteOS/dualsense-ps5-usb-research",
+        "url": "https://github.com/ShadowByteOS/dualsense-ps5-usb-research",
+        "description": "USB reverse engineering of the DualSense <-> PS5 protocol (topology, report map, auth handshake) plus a working local accessibility controller middleware.",
+        "stars": 18,
+        "forks": 0,
+        "openIssues": 0,
+        "language": "Python",
+        "owner": {
+          "login": "ShadowByteOS",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/98211769?v=4",
+          "url": "https://github.com/ShadowByteOS"
+        },
+        "topics": [],
+        "createdAt": "2026-08-06T14:28:38Z",
+        "pushedAt": "2026-08-06T14:29:43Z",
+        "updatedAt": "2026-09-06T21:38:13Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1347078309,
+        "name": "bfs-clicker",
+        "fullName": "8eeth0ven/bfs-clicker",
+        "url": "https://github.com/8eeth0ven/bfs-clicker",
+        "description": "Playwright 自动点击 Web 控制台爬虫 + Android App 逆向与黑盒测试套件（frida + adb），用于界面遍历、页面跳转、动态 JS/接口捕获。 an auto-clicking Web console crawler (Playwright) plus an Android App reverse-engineering & DAST suite (frida + adb) for UI traversal, activity jumping, and dynamic JS/API capture.",
+        "stars": 17,
+        "forks": 8,
+        "openIssues": 0,
+        "language": "JavaScript",
+        "owner": {
+          "login": "8eeth0ven",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/66227331?v=4",
+          "url": "https://github.com/8eeth0ven"
+        },
+        "topics": [],
+        "createdAt": "2026-08-26T08:12:21Z",
+        "pushedAt": "2026-09-04T10:36:20Z",
+        "updatedAt": "2026-09-17T07:28:14Z",
+        "license": null,
+        "archived": false
+      },
+      {
+        "id": 1365162598,
+        "name": "windows-wesp-research",
+        "fullName": "xusheng6/windows-wesp-research",
+        "url": "https://github.com/xusheng6/windows-wesp-research",
+        "description": "Reverse engineering and live validation of the Windows Endpoint Security Platform preview",
+        "stars": 17,
+        "forks": 1,
+        "openIssues": 0,
+        "language": "PowerShell",
+        "owner": {
+          "login": "xusheng6",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/94503187?v=4",
+          "url": "https://github.com/xusheng6"
+        },
+        "topics": [
+          "binary-ninja",
+          "endpoint-security",
+          "reverse-engineering",
+          "wesp",
+          "windows-security"
+        ],
+        "createdAt": "2026-09-11T01:30:00Z",
+        "pushedAt": "2026-09-11T01:30:05Z",
+        "updatedAt": "2026-09-15T06:56:26Z",
+        "license": "MIT",
+        "archived": false
+      },
+      {
+        "id": 1341508478,
+        "name": "desvendando-elifoot-98",
+        "fullName": "trsthales/desvendando-elifoot-98",
+        "url": "https://github.com/trsthales/desvendando-elifoot-98",
+        "description": "Engenharia reversa do Elifoot 98 (16-bit Delphi) usando Ghidra no Linux: fórmulas matemáticas dos gols, bônus de nacionalidade, mitos e o motor de jogo desvendados.",
+        "stars": 17,
+        "forks": 3,
+        "openIssues": 0,
+        "language": "C",
+        "owner": {
+          "login": "trsthales",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/207514989?v=4",
+          "url": "https://github.com/trsthales"
+        },
+        "topics": [
+          "cheat-engine-program",
+          "debian",
+          "delphi",
+          "elifoot",
+          "elifoot98",
+          "engenharia-reversa",
+          "game-engine",
+          "game-mechanics",
+          "ghidra",
+          "linux",
+          "retrogaming",
+          "reverse-engineering",
+          "x86-16bit"
+        ],
+        "createdAt": "2026-08-21T07:05:59Z",
+        "pushedAt": "2026-08-22T10:48:20Z",
+        "updatedAt": "2026-09-11T01:10:52Z",
+        "license": null,
         "archived": false
       }
     ],
@@ -5349,7 +5312,7 @@
       "fullName": "awesome-android-root/awesome-android-root",
       "url": "https://github.com/awesome-android-root/awesome-android-root",
       "description": "Discover best root apps, Magisk, KernelSu & LSPosed(xposed) modules & rooting guides",
-      "stars": 4676,
+      "stars": 4677,
       "forks": 266,
       "openIssues": 1,
       "language": "Markdown",
@@ -5382,7 +5345,7 @@
       ],
       "createdAt": "2024-07-22T17:30:07Z",
       "pushedAt": "2026-09-15T22:09:18Z",
-      "updatedAt": "2026-09-17T03:02:28Z",
+      "updatedAt": "2026-09-17T10:25:10Z",
       "license": "MIT",
       "archived": false,
       "_verified": true,
@@ -5919,7 +5882,7 @@
   "languages": [
     {
       "name": "Python",
-      "count": 40
+      "count": 39
     },
     {
       "name": "Java",
@@ -5927,19 +5890,19 @@
     },
     {
       "name": "C++",
-      "count": 17
+      "count": 18
     },
     {
       "name": "C",
-      "count": 12
-    },
-    {
-      "name": "Shell",
-      "count": 11
+      "count": 13
     },
     {
       "name": "JavaScript",
-      "count": 10
+      "count": 8
+    },
+    {
+      "name": "Shell",
+      "count": 8
     },
     {
       "name": "Kotlin",
@@ -5951,14 +5914,14 @@
     },
     {
       "name": "HTML",
-      "count": 6
-    },
-    {
-      "name": "Objective-C",
-      "count": 4
+      "count": 7
     },
     {
       "name": "Rust",
+      "count": 5
+    },
+    {
+      "name": "Objective-C",
       "count": 4
     },
     {
@@ -5971,6 +5934,10 @@
     },
     {
       "name": "TypeScript",
+      "count": 3
+    },
+    {
+      "name": "Go",
       "count": 2
     },
     {
@@ -5986,23 +5953,19 @@
       "count": 1
     },
     {
-      "name": "Go",
-      "count": 1
-    },
-    {
       "name": "Swift",
       "count": 1
     }
   ],
   "stats": {
-    "uniqueRepos": 3846,
+    "uniqueRepos": 3716,
     "shownRepos": 151,
     "resourceLists": 30,
-    "blockedOffTopic": 0
+    "blockedOffTopic": 14
   },
   "alertThreshold": 1000,
   "insight": {
-    "generatedAt": "2026-09-17T10:18:37.057Z",
+    "generatedAt": "2026-09-17T10:28:40.936Z",
     "date": "2026-09-17",
     "baseline": null,
     "note": "首跑：已写入今日基线快照，7 日内开始产出增量榜单。",
