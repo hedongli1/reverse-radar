@@ -1,26 +1,8 @@
 {
-  "alertedSurges": [
-    "2026-09-24:NationalSecurityAgency/ghidra",
-    "2026-09-26:zhaoxuya520/reverse-skill",
-    "2026-09-27:newliver666/apk-reverse",
-    "2026-09-27:zhaoxuya520/reverse-skill",
-    "2026-09-28:newliver666/apk-reverse",
-    "2026-09-28:zhaoxuya520/reverse-skill",
-    "2026-09-29:newliver666/apk-reverse",
-    "2026-09-29:zhaoxuya520/reverse-skill",
-    "2026-09-30:newliver666/apk-reverse",
-    "2026-09-30:zhaoxuya520/reverse-skill",
-    "2026-10-01:zhaoxuya520/reverse-skill",
-    "2026-10-01:newliver666/apk-reverse",
-    "2026-10-02:zhaoxuya520/reverse-skill",
-    "2026-10-02:newliver666/apk-reverse",
-    "2026-10-03:zhaoxuya520/reverse-skill",
-    "2026-10-03:newliver666/apk-reverse",
-    "2026-10-04:zhaoxuya520/reverse-skill",
-    "2026-10-05:morluto/rea",
-    "2026-10-05:zhaoxuya520/reverse-skill",
-    "2026-10-06:morluto/rea",
-    "2026-10-06:zhaoxuya520/reverse-skill",
-    "2026-10-06:NationalSecurityAgency/ghidra"
-  ]
+ "alertedSurges": [
+  "NationalSecurityAgency/ghidra",
+  "zhaoxuya520/reverse-skill",
+  "newliver666/apk-reverse",
+  "morluto/rea"
+ ]
 }
