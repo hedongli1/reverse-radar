@@ -1,8 +1,9 @@
 {
- "alertedSurges": [
-  "NationalSecurityAgency/ghidra",
-  "zhaoxuya520/reverse-skill",
-  "newliver666/apk-reverse",
-  "morluto/rea"
- ]
+  "alertedSurges": [
+    "NationalSecurityAgency/ghidra",
+    "zhaoxuya520/reverse-skill",
+    "newliver666/apk-reverse",
+    "morluto/rea",
+    "rehan-remade/universal-modder"
+  ]
 }
