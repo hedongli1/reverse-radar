@@ -21,10 +21,10 @@ const ISSUE_TITLE = '📡 逆向工程动向雷达 · 滚动周报';
 const SITE = 'https://hedongli1.github.io/reverse-radar/';
 const REPO = process.env.GITHUB_REPOSITORY || 'hedongli1/reverse-radar';
 
-const fmt = (n) => (n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n));
+const fmt = (n) => (n >= 1000 ? parseFloat((n / 1000).toFixed(1)) + 'k' : String(n));
 
 function repoLine(r, i, extra = '') {
-  const desc = (r.description || '').replace(/\r?\n/g, ' ').slice(0, 90);
+  const desc = (r.description || '').replace(/[\r\n]+/g, ' ').slice(0, 90);
   return `${i}. **[${r.fullName}](${r.url})** · ⭐ ${fmt(r.stars)}${extra}\n   ${desc}`;
 }
 
@@ -141,11 +141,11 @@ export async function run({ log = console.log } = {}) {
     await writeJson(STATE, { ...state, rollingIssueNumber: created.number });
   }
 
-  // ── 异常飙升：单独开告警 issue（同一仓库同一天只开一次）──
+  // ── 异常飙升：单独开告警 issue（同一仓库只告警一次，避免每天重复开新条刷屏）──
   const surges = data.insight?.surges || [];
   const alerted = new Set(state.alertedSurges || []);
   for (const s of surges) {
-    const key = `${data.date}:${s.fullName}`;
+    const key = s.fullName;
     if (alerted.has(key)) continue;
     const created = await gh(`/repos/${REPO}/issues`, {
       method: 'POST',
